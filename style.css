@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+body{
+    
+    background: rgb(8,32,5);
+    background: linear-gradient(90deg, rgba(8,32,5,1) 0%, rgba(175,175,175,1) 100%);
+    color: greenyellow;
+    font-family: 'Nova Mono', monospace;
+    
+}
+
+#map {
+    height: 600px;
+    width: 100%;
+    resize: vertical;
+    transition: opacity 500ms, transform 1400ms, filter 2500ms;
+}
+
+map:hover{
+    opacity: 70%;
+filter: brightness(450%);
+transform: rotate(2deg);
+}
+
+img.wrap
+{  
+float: left;   
+margin: 30px 40px 10px 0px;
+transition: opacity 500ms, transform 1400ms, filter 2500ms;
+}  
+
+img.wrap:hover{
+opacity: 70%;
+filter: brightness(450%);
+transform: rotate(2deg);
+}
+
+img.wrap2
+{  
+float: right;   
+margin: 30px 0px 10px 30px;
+transition: opacity 500ms, transform 1400ms, filter 2500ms;
+}  
+
+img.wrap2:hover{
+opacity: 70%;
+filter: brightness(450%);
+transform: rotate(-2deg);
+}
+p{
+    transition: filter 1500ms, font-size 300ms ease;
+}
+
+p:hover{
+filter:drop-shadow(whitesmoke 0px 0px 100px);
+font-size: 20px;
+}
+
+#conteneur{
+    max-width: 80%;
+    margin:0 auto;
+    color: greenyellow;
+    text-align: justify;
+    /* max-width: 980px; */
+}
+#logo{
+    position: inherit;
+    width: 100px;
+    margin: 20px;
+}
+
+#logo{
+    transform: rotate(-90deg);
+    transition: ease-in-out, 2s;
+
+}
+
+button{
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 11px;
+    font-weight: 800; 
+    background-color: lightgreen;
+    width: 450px;
+    border: solid black 3px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 500ms, color 300ms;
+    margin: 0 auto;
+    display: block;
+}
+
+button:hover{
+    background-color: lightslategray;
+    color: whitesmoke;
+}
+
+input[type=text] {
+    background-color: #3CBC8D;
+    color: white;
+    font-family: 'Nova Mono', monospace;
+    text-transform: uppercase;
+    transition: width 0.4s ease-in-out, background-color 0.6s;
+  }
+
+input[type=text]:focus {
+    background-color: lightslategray;
+    width: 550px;
+} 
+
+main{
+    flex-direction: column;
+    margin: 50px 50px 100px 100px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: darkslategray 0px 11px 15px;
+    background-image: url('bg.jpg');
+    background-position:110vmax;
+    background-blend-mode: darken;
+}
+
+h6{
+    letter-spacing: 10px;
+
+}
+
+h1, h2, h3 {
+    margin: auto;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 11px;
+    font-weight: 800;
+    color: greenyellow;
+    text-shadow: white 0px 10px 50px;
+    /* text-transform: capitalize; */
+}
+
+
+nav, main {
+    display:flex;
+}
+
+nav {
+    justify-content: space-around;
+    transition: background-color, 300ms;
+    
+}
+
+a:link{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+a:visited{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+nav:hover{
+    text-shadow: greenyellow 1px -7px 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: greenyellow;
+    transition: color, 300ms;
+}
+
+nav a:hover{
+    color: white;
+}
+
+header, nav , #gauche, section, #droite, footer{
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+ 
+#listcont{
+    display: flex;
+    /* flex-direction: row; */
+    margin: auto;
+}
+#list{
+    display: flex;
+    align-self: center;
+}
+
+table{
+    text-align: center;
+}
+
+table td{
+    text-align: right;
+    color: honeydew;
+    padding: 16px;
+}
+
+
+@media (max-width:640px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #gauche{
+        order : -2;
+    }
+    
+    #droite{
+        order : -1;
+    }
+    
+    #gauche, #droite{
+        display: flex;
+        flex-direction: row;
+        align-items:baseline;
+    }
+}
+
