@@ -72,7 +72,7 @@ font-size: 20px;
 
 #logo{
     transform: rotate(-90deg);
-    transition: ease-in-out, 2s;
+    transition: ease-in-out 2s;
 
 }
 
@@ -95,17 +95,20 @@ button:hover{
     color: whitesmoke;
 }
 
-input[type=text] {
+form input[type=text]{
     background-color: #3CBC8D;
     color: white;
     font-family: 'Nova Mono', monospace;
     text-transform: uppercase;
-    transition: width 0.4s ease-in-out, background-color 0.6s;
+    border-radius: 10px;
+    margin: 15px;
+    width: 50px;
+    transition: width 500ms ease-in-out, background-color 0.6s;
   }
 
-input[type=text]:focus {
+form input[type=text]:focus{
     background-color: lightslategray;
-    width: 550px;
+    width: 400px;
 } 
 
 main{
@@ -204,7 +207,7 @@ table td{
 }
 
 
-@media (max-width:640px){
+@media (max-width:840px){
     nav{
         flex-wrap: wrap;
     }
@@ -213,18 +216,5 @@ table td{
         flex-direction: column;
     }
 
-    #gauche{
-        order : -2;
-    }
-    
-    #droite{
-        order : -1;
-    }
-    
-    #gauche, #droite{
-        display: flex;
-        flex-direction: row;
-        align-items:baseline;
-    }
 }
 
